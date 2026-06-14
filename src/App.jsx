@@ -1,8 +1,6 @@
-// import Start from "./Start"; 
-// function App() { 
-//   return <Start/>; 
-// } 
-// export default App;  
+// تمرین اول: یک کامپوننت به اسم استیودنت بساز - *********
+
+// از App این اطلاعات رو بگیر {firstName, age} **************** 
 export default function App() {
   return ( 
     <> 
