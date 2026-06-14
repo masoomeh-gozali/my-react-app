@@ -7,8 +7,8 @@ export default function App() {
   return ( 
     <> 
     {/* <TamrinOne/>  */}
-    <TamrinTwo/>  
-    {/* <TamrinThree/>  */}
+    {/* <TamrinTwo/>   */}
+    <TamrinThree/> 
 
     </> 
   ); 
