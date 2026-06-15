@@ -1,3 +1,4 @@
+import TamrinFive from "./TamrinFive";
 import TamrinFour from "./TamrinFour";
 import TamrinOne from "./TamrinOne";
 import TamrinThree from "./TamrinThree";
@@ -10,11 +11,13 @@ export default function App() {
     {/* <TamrinOne/>  */}
     {/* <TamrinTwo/>   */}
     {/* <TamrinThree/>  */} 
-    <TamrinFour/> 
+    {/* <TamrinFour/>  */} 
+    <TamrinFive/> 
 
     </> 
   ); 
 } 
+
 
 
 
