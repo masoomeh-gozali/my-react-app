@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { use, useState } from "react";
 
 export default function TamrinSixCount() { 
     let [count, setCount] = useState(0) 
@@ -15,3 +15,12 @@ export default function TamrinSixCount() {
         </div>
 
     ) } 
+//  *********************** تمرین شیشم : ************************* 
+// با useStete یه دکمه بساز که هربار کلیک شد عدد زیاد شود 
+// نکات کلیدی قابل فهم با خوندن روی تمرین استفاده از : 
+// event ocClick  
+// ایجاد button 
+// استفاده از h1 و css جهت بهتر دیده شدن 
+// + کمی تمرین با تلوین  
+// و همچنین مهم ترین نکته ی تمرین استفاده از 
+// useState بود 
