@@ -1,9 +1,8 @@
 export default function TamrinThree() { 
     let Students = ["elena", "Takara", "Anahita", "Albert Einstein", "tesla"]; 
     return ( 
-        <ul> 
-            {Students.map( (student, index) => (<li key = {index}> {student} </li> ))} 
-
+        <ul>
+            {Students.map((student,index) =><li key= {index}> {student} </li> )}
         </ul>
 
         
