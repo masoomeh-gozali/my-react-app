@@ -9,7 +9,7 @@ export default function TamrinEightRemove() {
         <div className="bg-purple-400">  
         {names.map((name, index) => ( <button key={index}  onClick={ () => deleteNames(name)}  className="bg-pink-200 w-20 h-10 p-4 m-3 text-center rounded-lg hover:bg-pink-400 font-bold flex items-center justify-center italic"> {name} </button>))} 
 
-        </div>
+        </div> 
     ); 
 } 
 // تمرین هشتم : 

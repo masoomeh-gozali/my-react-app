@@ -1,6 +1,7 @@
 import TamrinEightRemove from "./TamrinEight";
 import TamrinFive from "./TamrinFive";
 import TamrinFour from "./TamrinFour";
+import TamrinNineTodoList from "./TamrinNine";
 import TamrinOne from "./TamrinOne";
 import TamrinSevenIsLogin from "./TamrinSeven";
 import TamrinSixCount from "./TamrinSix";
@@ -18,7 +19,8 @@ export default function App() {
     {/* <TamrinFive/>  */}  
     {/* <TamrinSixCount/>  */} 
     {/* <TamrinSevenIsLogin/>  */}
-    <TamrinEightRemove/> 
+    {/* <TamrinEightRemove/>  */} 
+    <TamrinNineTodoList/> 
 
     </> 
   ); 
