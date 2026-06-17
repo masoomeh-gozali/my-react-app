@@ -15,10 +15,11 @@ export default function TamrinNineTodoList() {
 
      return ( 
 
-        <div className=" p-5 bg-blue-200 rounded-lg w-200 h-50 justify-center items-center flex-row  m-35 flex"> 
+        <div className=" p-4 bg-blue-200 rounded-lg w-200 h-70 justify-center items-center flex-row  m-35 flex"> 
         <div> 
             {/* یوزاستیت رو برای این ساختیم که چون باید یه جایی رو برای ذخیره چیزی که کاربر تایپ میکنه داشته باشیم
              و بعد توی اینپوت از انچنج استفاده میکنیم و بهش میگیم هروقت کاربر چیزی تایپ کرد مقدار جدید رو بگیر و داخل استیت ذخیره کن  */}
+            <h1 className="text-black p-3 "> <b> TODO LIST </b> </h1>
             <input type="text" value={text} onChange={(event) => setText(event.target.value) 
             }  className="w-100 h-10 bg-pink-200 px-2 rounded-lg hover:bg-pink-300 "  placeholder="...برنامه های روزانه خود را بنویسید  "/> 
 
@@ -44,5 +45,15 @@ export default function TamrinNineTodoList() {
 // اضافه کردن Todo 
 // این تمرین رو چند بار از اول نوشتم تا خوب یادش بگیرم 
 // ترکیب چیزهایی هست که توی تمرین های قبلی بودن  
+
+// تمرین دهم : 
+// حذف Todo 
+// با استفاده از متد Filter 
+
+
+
+
+
+
 
 
