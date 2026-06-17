@@ -1,3 +1,4 @@
+import { uniqueId } from "lodash";
 import { useState } from "react";
 export default function TamrinNineTodoList() {  
     let [text, setText] = useState("") ; 
@@ -5,7 +6,7 @@ export default function TamrinNineTodoList() {
     // let [inputValue, setInputValue] = useState(""); 
     const addTodo = () => { 
         if (text.trim() === "")return ; 
-        setTodos([...todos, text]); 
+        setTodos([...todos, { id:uniqueId(), text } ]); 
         setText(""); 
     }; 
 
@@ -14,8 +15,10 @@ export default function TamrinNineTodoList() {
 
      return ( 
 
-        <div className=" p-5 bg-blue-200 rounded-lg w-200 h-30 justify-center items-center flex-row  m-35 flex"> 
+        <div className=" p-5 bg-blue-200 rounded-lg w-200 h-50 justify-center items-center flex-row  m-35 flex"> 
         <div> 
+            {/* یوزاستیت رو برای این ساختیم که چون باید یه جایی رو برای ذخیره چیزی که کاربر تایپ میکنه داشته باشیم
+             و بعد توی اینپوت از انچنج استفاده میکنیم و بهش میگیم هروقت کاربر چیزی تایپ کرد مقدار جدید رو بگیر و داخل استیت ذخیره کن  */}
             <input type="text" value={text} onChange={(event) => setText(event.target.value) 
             }  className="w-100 h-10 bg-pink-200 px-2 rounded-lg hover:bg-pink-300 "  placeholder="...برنامه های روزانه خود را بنویسید  "/> 
 
@@ -24,15 +27,18 @@ export default function TamrinNineTodoList() {
             <div> 
             <ul className="bg-blue-200"> 
 
-            {todos.map((todo, index) => (<li key={index} 
-            className="bg-gray-200 p-2 rounded-lg "> {todo} </li>))  } 
-
+            {todos.map((todo) => (<li key={todo.id} 
+            className="bg-gray-200 p-2 rounded-lg  m-5"> {todo.text}  
+            <button onClick={() => setTodos(todos.filter(t => t.id !== todo.id))} className="bg-yellow-200 py-2 ml-2 rounded-lg hover:bg-yellow-300" > Remove </button>
+            </li>))}  
             </ul> 
 
         </div>
         </div> 
      ); 
 } 
+
+
 
 // تمرین نهم : 
 // اضافه کردن Todo 

@@ -1,3 +1,4 @@
+import TamrinBishtar from "./TamrinBishtar";
 import TamrinEightRemove from "./TamrinEight";
 import TamrinFive from "./TamrinFive";
 import TamrinFour from "./TamrinFour";
@@ -20,7 +21,8 @@ export default function App() {
     {/* <TamrinSixCount/>  */} 
     {/* <TamrinSevenIsLogin/>  */}
     {/* <TamrinEightRemove/>  */} 
-    <TamrinNineTodoList/> 
+    <TamrinNineTodoList/>  
+    {/* <TamrinBishtar/>  */}
 
     </> 
   ); 
